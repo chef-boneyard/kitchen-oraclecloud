@@ -422,7 +422,7 @@ describe Kitchen::Driver::Oraclecloud do
     it 'returns an array of formatted keys' do
       allow(driver).to receive(:config).and_return(sshkeys: %w(key1 key2))
       allow(driver).to receive(:oraclecloud_client).and_return(client)
-      allow(client).to receive(:compute_identity_domain).and_return('test_domain')
+      allow(client).to receive(:full_identity_domain).and_return('test_domain')
 
       expect(driver.sshkeys).to eq([ 'test_domain/key1', 'test_domain/key2' ])
     end

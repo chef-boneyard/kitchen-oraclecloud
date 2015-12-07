@@ -200,7 +200,7 @@ module Kitchen
       end
 
       def sshkeys
-        config[:sshkeys].map { |key| "#{oraclecloud_client.compute_identity_domain}/#{key}" }
+        config[:sshkeys].map { |key| "#{oraclecloud_client.full_identity_domain}/#{key}" }
       end
 
       def public_ip
