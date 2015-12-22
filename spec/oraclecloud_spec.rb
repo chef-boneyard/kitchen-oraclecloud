@@ -38,7 +38,8 @@ describe Kitchen::Driver::Oraclecloud do
       identity_domain: 'test_domain',
       shape:           'test_shape',
       image:           'test_image',
-      verify_ssl:      true
+      verify_ssl:      true,
+      private_cloud:   false
     }
   end
 

@@ -58,6 +58,7 @@ Other options that you can set include:
  * **public_ip**: optional; set to `pool` if you want Oracle Cloud to assign an IP from the default pool, or specify an existing IP Reservation name
  * **wait_time**: optional; number of seconds to wait for a server to start.  Defaults to 600.
  * **refresh_time**: optional; number of seconds sleep between checks on whether a server has started.  Defaults to 2.
+ * **private_cloud**: optional; set to `true` if the API endpoint you are using is part of an Oracle Cloud private cloud you are running behind your company's firewall. This is required due to the differences in identity_domain handling between the public and private cloud offerings.
 
 All of these settings can be set per-platform, as shown above, or can be set globally in the `driver` section of your .kitchen.yml:
 
