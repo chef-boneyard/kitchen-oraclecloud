@@ -41,6 +41,7 @@ module Kitchen
       default_config :description, nil
       default_config :project_name, nil
       default_config :public_ip, nil
+      default_config :private_cloud, false
 
       def name
         'OracleCloud'
@@ -94,7 +95,8 @@ module Kitchen
           password:        config[:password],
           api_url:         config[:api_url],
           identity_domain: config[:identity_domain],
-          verify_ssl:      config[:verify_ssl]
+          verify_ssl:      config[:verify_ssl],
+          private_cloud:   config[:private_cloud]
         )
       end
 
