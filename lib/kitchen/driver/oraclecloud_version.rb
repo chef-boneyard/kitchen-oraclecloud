@@ -18,6 +18,6 @@
 
 module Kitchen
   module Driver
-    ORACLECLOUD_VERSION = '1.2.0'
+    ORACLECLOUD_VERSION = '1.2.0'.freeze
   end
 end
