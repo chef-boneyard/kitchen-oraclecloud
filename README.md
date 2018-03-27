@@ -1,6 +1,6 @@
 # kitchen-oraclecloud
 
-A driver to allow Test Kitchen to consume Oracle Cloud resources to perform testing.
+A driver to allow Test Kitchen to consume Oracle Cloud Infrastructure Classic resources to perform testing.
 
 ## Installation
 
